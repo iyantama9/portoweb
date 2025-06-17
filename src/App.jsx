@@ -237,6 +237,19 @@ const experiences = [
       "Building Payment Bot System using Fastapi Python with Midtrans integration",
     ],
   },
+  {
+    type: "Study",
+    company: "Universitas Sebelas Maret",
+    role: "Informatics",
+    period: "Aug 2022 - Aug 2026",
+    description: [
+      "Earned various certificates from Dicoding and Google Cloud Skill Boost",
+      "Led mentoring sessions in Weekly Consultation",
+      "Received a LinkedIn recommendation from mentor",
+      "Designed the ERD and developed almost the entire backend of the Anggar.In app for the Capstone Project using Express.js",
+      "Granted a quota to take the Associate Cloud Engineer certification",
+    ],
+  },
 ];
 
 const organizations = [
