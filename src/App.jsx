@@ -12,8 +12,6 @@ import {
   Briefcase,
 } from "lucide-react";
 
-// --- Komponen Ikon SVG untuk Teknologi ---
-// A reusable SVG Icon component to render custom icons from path data.
 const Icon = ({ path, color = "currentColor", ...props }) => (
   <svg
     {...props}
@@ -25,7 +23,6 @@ const Icon = ({ path, color = "currentColor", ...props }) => (
   </svg>
 );
 
-// An object containing SVG path data for various technology icons.
 const icons = {
   js: "M0 0h24v24H0V0zm22.034 18.262H1.964V5.738h20.07v12.524zM11.99 16.603c1.08 0 1.77-.338 2.3-1.01l1.642 1.052c-.9.9-2.22 1.58-3.95 1.58-2.67 0-4.64-1.8-4.64-4.2 0-2.43 1.97-4.22 4.64-4.22 2.61 0 4.54 1.73 4.54 4.16 0 .3-.04.58-.08.81H9.55c.16 1.35 1.14 2.19 2.44 2.19zm-2.43-3.23h4.74c-.1-.94-.8-1.63-2.33-1.63-1.47 0-2.2.69-2.41 1.63z",
   react:
@@ -53,8 +50,6 @@ const icons = {
     "M19 11h-1.7c-.3-1.4-1-2.7-2-3.7l1.2-1.2c.4-.4.4-1 0-1.4s-1-.4-1.4 0l-1.2 1.2c-1-1-2.3-1.7-3.7-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1.7c-1.4.3-2.7 1-3.7 2L5.4 5.4c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l1.2 1.2c-1 1-1.7 2.3-2 3.7H3c-.6 0-1 .4-1 1s.4 1 1 1h1.7c.3 1.4 1 2.7 2 3.7l-1.2 1.2c-.4.4-.4 1 0 1.4.2.2.5.3.7.3s.5-.1.7-.3l1.2-1.2c1 1 2.3 1.7 3.7 2V21c0 .6.4 1 1 1s1-.4 1-1v-1.7c1.4-.3 2.7-1 3.7-2l1.2 1.2c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-1.2-1.2c1-1 1.7-2.3 2-3.7H21c.6 0 1-.4 1-1s-.4-1-1-1zm-7 5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z",
 };
 
-// --- Animated Background Component ---
-// Creates a "Matrix"-style falling binary code animation on a canvas element.
 const AnimatedBackground = () => {
   const canvasRef = useRef(null);
 
@@ -66,7 +61,6 @@ const AnimatedBackground = () => {
     let columns;
     let drops;
 
-    // Initializes or re-initializes canvas dimensions and drop positions.
     const initialize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -81,31 +75,26 @@ const AnimatedBackground = () => {
     window.addEventListener("resize", initialize);
 
     let lastTime = 0;
-    const fps = 15; // Animation frames per second
+    const fps = 15; 
     const fpsInterval = 1000 / fps;
 
-    // Animation loop
     const animate = (timestamp) => {
       animationFrameId = window.requestAnimationFrame(animate);
       const elapsed = timestamp - lastTime;
 
-      // Throttles the animation to the desired FPS
       if (elapsed > fpsInterval) {
         lastTime = timestamp - (elapsed % fpsInterval);
 
-        // Fills the canvas with a semi-transparent black to create a fading trail effect
         ctx.fillStyle = "rgba(13, 17, 23, 0.05)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        ctx.fillStyle = "#003a00"; // Dark green color for the text
+        ctx.fillStyle = "#003a00"; 
         ctx.font = "15px monospace";
 
-        // Renders each dropping character
         for (let i = 0; i < drops.length; i++) {
           const text = Math.random() > 0.5 ? "0" : "1";
           ctx.fillText(text, i * 20, drops[i] * 20);
 
-          // Resets the drop to the top randomly to create a continuous, uneven effect
           if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
             drops[i] = 0;
           }
@@ -243,11 +232,6 @@ const experiences = [
     role: "Informatics",
     period: "Aug 2022 - Aug 2026",
     description: [
-      "Earned various certificates from Dicoding and Google Cloud Skill Boost",
-      "Led mentoring sessions in Weekly Consultation",
-      "Received a LinkedIn recommendation from mentor",
-      "Designed the ERD and developed almost the entire backend of the Anggar.In app for the Capstone Project using Express.js",
-      "Granted a quota to take the Associate Cloud Engineer certification",
     ],
   },
 ];
@@ -275,11 +259,8 @@ const organizations = [
   },
 ];
 
-// --- Main App Component ---
 export default function App() {
   const [showContent, setShowContent] = useState(false);
-
-  // --- Renders a description, handling either a string or an array of strings for list items ---
   const renderDescription = (description) => {
     if (Array.isArray(description)) {
       return (
@@ -295,7 +276,6 @@ export default function App() {
 
   return (
     <>
-      {/* Global styles for custom animations */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap');
         
@@ -311,11 +291,9 @@ export default function App() {
         }
       `}</style>
 
-      {/* Using font-sans as default, and font-mono for specific elements */}
       <div className="bg-[#0D1117] min-h-screen text-gray-300 font-sans relative z-0">
         <AnimatedBackground />
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* HERO SECTION */}
           <section className="min-h-screen flex flex-col justify-center">
             <div className="font-mono text-2xl sm:text-3xl text-green-400 mb-4">
               <span className="text-cyan-400">user@portfolio</span>:~${" "}
@@ -377,7 +355,6 @@ export default function App() {
             )}
           </section>
 
-          {/* EXPERIENCE & STUDIES SECTION */}
           <section id="experience" className="py-20">
             <h2 className="font-mono text-3xl font-bold text-white mb-12">
               <span className="text-cyan-400">~/</span>experience
@@ -409,7 +386,6 @@ export default function App() {
             </div>
           </section>
 
-          {/* PROJECTS SECTION */}
           <section id="projects" className="py-20">
             <h2 className="font-mono text-3xl font-bold text-white mb-12 text-center">
               <span className="text-cyan-400">~/</span>projects
@@ -449,7 +425,6 @@ export default function App() {
             </div>
           </section>
 
-          {/* SKILLS SECTION */}
           <section id="skills" className="py-20">
             <h2 className="font-mono text-3xl font-bold text-white mb-12 text-center">
               <span className="text-cyan-400">~/</span>skills
@@ -480,7 +455,6 @@ export default function App() {
             </div>
           </section>
 
-          {/* ORGANIZATIONS SECTION */}
           <section id="organizations" className="py-20">
             <h2 className="font-mono text-3xl font-bold text-white mb-12">
               <span className="text-cyan-400">~/</span>orgs
@@ -510,7 +484,6 @@ export default function App() {
             </div>
           </section>
 
-          {/* FOOTER */}
           <footer className="text-left py-10">
             <p className="text-gray-500">©2025 / Whilyan Pratama</p>
           </footer>
