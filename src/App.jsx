@@ -198,7 +198,14 @@ const experiences = [
     company: "Widya Robotic",
     role: "System Analyst Internship",
     period: "Mar 2025 - Jun 2025",
-    description: "Deskripsi akan ditambahkan nanti.",
+    description: [
+      "Conducting Database Research and Analysis for the Fleet Management System (FMS) project, including performance benchmarking, disk space efficiency, and data tiering.",
+      "Designing System Workflows and Architectures, including Flowcharts, Topologies, and Solution Concepts for AI-based projects such as PPE Detection and People Counting.",
+      "Developing Technical Documentation and Diagrams using Mermaid JS for sequence diagrams and Sequence Flows for various tracking features.",
+      "Creating User Interface Mockups and Wireframes for AI Parking Monitoring Systems and Dwelling Time Dashboards using Figma and Mockflow.",
+      "Performing Market and Technical Research, including SWOT analysis for Matador Glass (Smart Glass) and competitor research for FMS project evaluation.",
+      "Collaborating with Stakeholders and Clients through technical meetings to discuss project requirements, such as AI Conveyor systems and strategic gathering with Huawei.",
+    ],
   },
   {
     type: "Study",
@@ -221,8 +228,6 @@ const experiences = [
     description: [
       "Building & designing the establishment of Crowned Traders",
       "Building working system and foundation of Crowned Traders",
-      "Becoming data and fundamental researcher for cryptocurrency",
-      "Become cryptocurrency educator with theoretical and practical presentations",
       "Building Payment Bot System using Fastapi Python with Midtrans integration",
     ],
   },
@@ -312,12 +317,8 @@ export default function App() {
                   Full Stack Developer & Web3 Enthusiast
                 </h2>
                 <p className="max-w-xl mt-6 text-lg text-gray-400 leading-relaxed">
-                  6th-semester informatics student at Sebelas Maret University
-                  and Ex Cloud Computing cohort at Bangkit Academy. I focus on
-                  Backend development and Cloud Computing with experience using
-                  Express.js, PHP Laravel, and MySQL. Additionally, I am a
-                  Co-Founder of "Crowned Traders," a crypto and forex trading
-                  community.
+                    Final year Informatics student at Universitas Sebelas Maret and a Cloud Computing graduate of Bangkit Academy (by Google, Tokopedia, Gojek, and Traveloka). I specialize in Full Stack and Cloud Computing development, with hands-on experience in a diverse technical stack including React.js, Express.js, Laravel, FastAPI (Python), and most recently, Golang. 
+                    I possess strong communication skills and a proactive, self-starter mindset. Currently, I am expanding my expertise into the world of Web3 and Cryptocurrency. Furthermore, I am deeply exploring Internet of Things (IoT), Edge Computing, and Machine Learning to further enhance my technical capabilities and professional potential.
                 </p>
                 <div className="mt-8 flex items-center space-x-4">
                   <a
