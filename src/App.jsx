@@ -311,7 +311,7 @@ export default function App() {
                   Whilyan Pratama
                 </h1>
                 <h2 className="text-2xl md:text-3xl text-cyan-400 mt-2 font-mono">
-                  Full Stack Developer & Web3 Enthusiast
+                  Full Stack Developer
                 </h2>
                 <p className="max-w-xl mt-6 text-lg text-gray-400 leading-relaxed">
                     Final year Informatics student at Universitas Sebelas Maret and a Cloud Computing graduate of Bangkit Academy (by Google, Tokopedia, Gojek, and Traveloka). I specialize in Full Stack and Cloud Computing development, with hands-on experience in a diverse technical stack including React.js, Express.js, Laravel, FastAPI (Python), and most recently, Golang. 
