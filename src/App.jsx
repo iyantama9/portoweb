@@ -193,10 +193,18 @@ const skills = {
 };
 
 const experiences = [
+    {
+    type: "Internship",
+    company: "Getcore.ID",
+    role: "Fullstack Developer Intern",
+    period: "Feb 2026 - Now",
+    description: [
+    ],
+  },
   {
     type: "Internship",
     company: "Widya Robotic",
-    role: "System Analyst Internship",
+    role: "System Analyst Intern",
     period: "Mar 2025 - Jun 2025",
     description: [
       "Conducting Database Research and Analysis for the Fleet Management System (FMS) project, including performance benchmarking, disk space efficiency, and data tiering.",
@@ -218,17 +226,6 @@ const experiences = [
       "Received a LinkedIn recommendation from mentor",
       "Designed the ERD and developed almost the entire backend of the Anggar.In app for the Capstone Project using Express.js",
       "Granted a quota to take the Associate Cloud Engineer certification",
-    ],
-  },
-  {
-    type: "Internship",
-    company: "Crowned Traders",
-    role: "Co-Founder",
-    period: "Jun 2024 - Jan 2025",
-    description: [
-      "Building & designing the establishment of Crowned Traders",
-      "Building working system and foundation of Crowned Traders",
-      "Building Payment Bot System using Fastapi Python with Midtrans integration",
     ],
   },
   {
@@ -318,7 +315,7 @@ export default function App() {
                 </h2>
                 <p className="max-w-xl mt-6 text-lg text-gray-400 leading-relaxed">
                     Final year Informatics student at Universitas Sebelas Maret and a Cloud Computing graduate of Bangkit Academy (by Google, Tokopedia, Gojek, and Traveloka). I specialize in Full Stack and Cloud Computing development, with hands-on experience in a diverse technical stack including React.js, Express.js, Laravel, FastAPI (Python), and most recently, Golang. 
-                    I possess strong communication skills and a proactive, self-starter mindset. Currently, I am expanding my expertise into the world of Web3 and Cryptocurrency. Furthermore, I am deeply exploring Internet of Things (IoT), Edge Computing, and Machine Learning to further enhance my technical capabilities and professional potential.
+                    I possess strong communication skills and a proactive, self-starter mindset. Currently, I am expanding my expertise into Internet of Things (IoT), Edge Computing, and Machine Learning to further enhance my technical capabilities and professional potential.
                 </p>
                 <div className="mt-8 flex items-center space-x-4">
                   <a
