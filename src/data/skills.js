@@ -29,8 +29,8 @@ export const skills = {
   ],
   automation: [
     { name: "N8N", icon: "https://cdn.simpleicons.org/n8n/EA4B71" },
-    { name: "Clawbot", icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Crect width='24' height='24' rx='4' fill='%234A90D9'/%3E%3Cpath d='M12 4L8 8h3v4H8l-2 2 2 2h3v2.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V16h3l2-2-2-2h-3V8h3L12 4z' fill='%23fff'/%3E%3C/svg%3E" },
-    { name: "Antigravity", icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Crect width='24' height='24' rx='4' fill='%238B5CF6'/%3E%3Cpath d='M12 3l-1.5 1.5L12 6l1.5-1.5L12 3zM8 7.5C8 10 9.8 12 12 12s4-2 4-4.5' stroke='%23fff' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='12' cy='14' r='1.5' fill='%23fff'/%3E%3Cpath d='M8 17h8M9 20h6' stroke='%23fff' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E" },
+    { name: "Clawdbot", icon: "https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/openclaw-color.svg" },
+    { name: "Antigravity", icon: "https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/antigravity-color.svg" },
   ],
   devops: [
     { name: "Docker", icon: "https://cdn.simpleicons.org/docker/2496ED" },
