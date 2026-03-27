@@ -1,4 +1,4 @@
-import { skills } from "../data/skills.jsx";
+import { skills } from "../data/skills";
 
 const Skills = () => {
   return (
@@ -7,7 +7,7 @@ const Skills = () => {
         <span className="text-cyan-400">~/</span>skills
         <span className="text-green-400">$</span> cat skills.json
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {Object.entries(skills).map(([category, skillList]) => (
           <div
             key={category}
@@ -22,7 +22,12 @@ const Skills = () => {
                   key={skill.name}
                   className="flex items-center transition-colors duration-200 hover:text-white"
                 >
-                  {skill.icon}
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="w-5 h-5 mr-3"
+                    loading="lazy"
+                  />
                   <span>{skill.name}</span>
                 </li>
               ))}
