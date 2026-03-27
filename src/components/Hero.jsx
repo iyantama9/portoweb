@@ -21,8 +21,7 @@ const Hero = () => {
             Whilyan Pratama
           </h1>
           <h2 className="text-2xl md:text-3xl text-cyan-400 mt-2 font-mono">
-            Full Stack Developer | AI & Edge Computing Enthusiast |
-            Insight-Driven Execution
+            Full Stack Developer | AI & Edge Computing Enthusiast
           </h2>
           <p className="max-w-xl mt-6 text-lg text-gray-400 leading-relaxed">
             Final year Informatics student at Universitas Sebelas Maret and a
