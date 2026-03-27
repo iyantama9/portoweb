@@ -15,11 +15,11 @@ const Projects = () => {
             className="bg-[#161B22]/70 backdrop-blur-sm border border-gray-800 rounded-lg overflow-hidden flex flex-col group transform transition-all duration-300 hover:-translate-y-1.5 hover:border-white/40 hover:shadow-2xl hover:shadow-white/5"
           >
             {project.image && (
-              <div className="w-full aspect-video overflow-hidden">
+              <div className="w-full h-56 overflow-hidden bg-[#0D1117]">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>

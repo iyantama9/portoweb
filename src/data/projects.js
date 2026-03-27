@@ -53,7 +53,7 @@ export const projects = [
   {
     title: "Anggar.in",
     description:
-      "Capstone project Bangkit Academy — aplikasi pengelolaan anggaran pribadi. Hampir seluruh backend dikerjain sendiri, mulai dari desain ERD sampai implementasi API. Ada fitur prediksi pengeluaran pakai ML juga.",
+      "Capstone project Bangkit Academy, aplikasi pengelolaan anggaran pribadi. Hampir seluruh backend dikerjain sendiri, mulai dari desain ERD sampai implementasi API. Ada fitur prediksi pengeluaran pakai ML juga.",
     tags: ["Express.js", "TensorFlow", "Kotlin", "MySQL", "GCP"],
     image: anggarinImg,
     link: "https://github.com/Anggar-In",
