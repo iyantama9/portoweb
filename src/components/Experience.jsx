@@ -29,7 +29,14 @@ const Experience = () => {
                 exp.type === "Internship" ? "bg-cyan-400" : "bg-green-400"
               }`}
             ></div>
-            <p className="text-sm text-gray-500 font-mono">{exp.period}</p>
+            <div className="flex items-center gap-3 flex-wrap">
+              <p className="text-sm text-gray-500 font-mono">{exp.period}</p>
+              {exp.type === "Internship" && (
+                <span className="text-xs bg-cyan-400/10 text-cyan-400 border border-cyan-400/30 px-2.5 py-0.5 rounded-full font-mono">
+                  Intern
+                </span>
+              )}
+            </div>
             <h3 className="text-xl font-bold text-white mt-1 flex items-center">
               {exp.type === "Internship" ? (
                 <Briefcase className="mr-2 text-cyan-400" size={20} />

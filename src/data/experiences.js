@@ -2,14 +2,14 @@ export const experiences = [
   {
     type: "Internship",
     company: "Getcore.ID",
-    role: "Fullstack Developer Intern",
+    role: "Fullstack Developer",
     period: "Feb 2026 - Now",
     description: [],
   },
   {
     type: "Internship",
     company: "Widya Robotic",
-    role: "System Analyst Intern",
+    role: "System Analyst",
     period: "Mar 2025 - Jun 2025",
     description: [
       "Conducting Database Research and Analysis for the Fleet Management System (FMS) project, including performance benchmarking, disk space efficiency, and data tiering.",

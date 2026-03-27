@@ -56,7 +56,7 @@ export const projects = [
       "Capstone project Bangkit Academy — aplikasi pengelolaan anggaran pribadi. Hampir seluruh backend dikerjain sendiri, mulai dari desain ERD sampai implementasi API. Ada fitur prediksi pengeluaran pakai ML juga.",
     tags: ["Express.js", "TensorFlow", "Kotlin", "MySQL", "GCP"],
     image: anggarinImg,
-    link: "#",
+    link: "https://github.com/Anggar-In",
   },
   {
     title: "Cah Apik Messenger - CAM",
@@ -72,21 +72,21 @@ export const projects = [
       "Sistem informasi klinik kesehatan mental yang handle booking sesi konseling, manajemen pasien, dan pembayaran online via Midtrans. Full-stack Laravel dari dashboard admin sampai landing page.",
     tags: ["Laravel", "MySQL", "Midtrans", "Blade"],
     image: innerwellImg,
-    link: "#",
+    link: "https://github.com/InnerWell-Klinic",
   },
   {
-    title: "SPI UNS",
+    title: "SPI - Secure Parking Indonesia",
     description:
-      "Sistem pengaduan internal kampus UNS. Mahasiswa bisa submit laporan pengaduan, track statusnya, dan admin bisa follow up langsung dari dashboard. Clean and simple, tapi fungsional.",
+      "Sistem internal buat Secure Parking Indonesia, salah satu perusahaan pengelola parkir terbesar di Indonesia. Handle manajemen data parkir, monitoring area, dan reporting dashboard buat operasional harian.",
     tags: ["Laravel", "MySQL", "Bootstrap"],
     image: spiImg,
     link: "#",
   },
   {
-    title: "P2P File Transfer",
+    title: "P2P Encrypted Chat",
     description:
-      "Desktop app buat transfer file langsung antar device di jaringan lokal tanpa perlu cloud. Peer-to-peer murni, tinggal konek dan kirim. Dibangun pakai Python Flet buat UI-nya.",
-    tags: ["Python", "Flet", "P2P Networking", "Desktop App"],
+      "Aplikasi chat peer-to-peer yang terenkripsi, langsung konek antar device tanpa lewat server pusat. Semua pesan di-encrypt end-to-end. Dibangun pakai Python Flet buat UI desktop-nya.",
+    tags: ["Python", "Flet", "P2P Networking", "Encryption"],
     image: p2pImg,
     link: "https://github.com/iyantama9/P2P-Flet-py-Apps",
   },
