@@ -112,15 +112,13 @@ export const topProjects = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     images: [pacarkuImg, pacarku2Img],
     link: "https://github.com/iyantama9/pacarku-landing",
-    top: true,
   },
   {
     title: "SPI - Secure Parking Indonesia",
     description:
       "Sistem internal buat Secure Parking Indonesia, salah satu perusahaan pengelola parkir terbesar di Indonesia. Handle manajemen data parkir, monitoring area, dan reporting dashboard buat operasional harian.",
     tags: ["Laravel", "MySQL", "Bootstrap"],
-    image: spiImg,
+    images: [spiImg],
     link: "#",
-    top: true,
   },
 ];
