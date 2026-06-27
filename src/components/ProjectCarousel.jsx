@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const ProjectCarousel = ({ images, title }) => {
+const ProjectCarousel = ({ images, title = "Project", interval = 4000 }) => {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
@@ -15,9 +15,9 @@ const ProjectCarousel = ({ images, title }) => {
 
   useEffect(() => {
     if (images.length <= 1 || isPaused) return;
-    const timer = setInterval(next, 4000);
+    const timer = setInterval(next, interval);
     return () => clearInterval(timer);
-  }, [images.length, isPaused, next]);
+  }, [images.length, isPaused, next, interval]);
 
   if (images.length === 0) return null;
 
@@ -26,6 +26,8 @@ const ProjectCarousel = ({ images, title }) => {
       className="relative w-full h-56 overflow-hidden bg-[#0D1117] group"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
+      onFocus={() => setIsPaused(true)}
+      onBlur={() => setIsPaused(false)}
     >
       <div
         className="flex h-full transition-transform duration-500 ease-out"
@@ -46,14 +48,14 @@ const ProjectCarousel = ({ images, title }) => {
         <>
           <button
             onClick={prev}
-            className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-black/80 focus:opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            className="absolute left-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-black/80 focus:opacity-100"
             aria-label="Previous image"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={next}
-            className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-black/80 focus:opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-black/60 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-black/80 focus:opacity-100"
             aria-label="Next image"
           >
             <ChevronRight className="w-5 h-5" />
@@ -68,6 +70,7 @@ const ProjectCarousel = ({ images, title }) => {
                   index === current ? "bg-cyan-400" : "bg-white/40 hover:bg-white/70"
                 }`}
                 aria-label={`Go to image ${index + 1}`}
+                aria-current={index === current ? "true" : undefined}
               />
             ))}
           </div>
