@@ -4,7 +4,13 @@ export const experiences = [
     company: "Getcore.ID",
     role: "Fullstack Developer",
     period: "Feb 2026 - Now",
-    description: [],
+    description: [
+      "Actively collaborating with the founder of Getcore.ID and the CEO of Flux Creative Universe on the PacarKu project, a hyper realistic AI companion designed to simulate authentic human interaction through AI-generated photos, voice notes, videos, and interactive sleep calls.",
+      "Developing a comprehensive dashboard for Secure Parking Indonesia, including large-scale data processing for all parking spots using Laravel.",
+      "Building a new 3D Landing Page for Flux Creative Universe to enhance user experience.",
+      "Participating in strategic meetings with prospective Getcore.ID clients to align technical solutions with business needs.",
+      "Mastering n8n and OpenClaw while leveraging Large Language Models (LLMs) to build advanced business automation and workflow solutions.",
+    ],
   },
   {
     type: "Internship",
