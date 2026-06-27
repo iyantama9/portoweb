@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npm install *)",
+      "Bash(find /c/Users/iyant/AppData/Local/Temp/claude -name \"b7o4v9jkf*\" -type f 2>/dev/null | head -5)",
+      "Read(//c/Users/iyant/AppData/Local/Temp/claude/**)",
+      "Bash(cat /c/Users/iyant/AppData/Local/Temp/claude/d--Project-portoweb/0ed8336f-e1ff-4f93-97c4-18967991d9d4/tasks/b7o4v9jkf.output)",
+      "Read(//c/Users/iyant/AppData/Local/Temp/claude/d--Project-portoweb/0ed8336f-e1ff-4f93-97c4-18967991d9d4/tasks/**)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/src/data/projects.js)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist)",
+      "Bash(wmic process *)",
+      "Bash(ps -p 29380 -o args=)",
+      "Bash(tasklist /FI \"PID eq 29380\" /FO LIST)",
+      "Bash(tasklist //FI \"PID eq 29380\" //FO LIST)",
+      "Bash(curl -s http://localhost:5174/)",
+      "Bash(curl -s http://localhost:5174/src/data/projects.js)"
+    ]
+  }
+}

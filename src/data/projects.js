@@ -31,6 +31,30 @@ export const projects = [
     link: "https://github.com/iyantama9/GetAbsen",
   },
   {
+    title: "Custodial Apps",
+    description:
+      "Aplikasi manajemen aset digital dengan fitur custodial wallet, tracking transaksi, dan dashboard monitoring. Dibangun dengan arsitektur modular dan fokus pada keamanan serta kemudahan pengguna.",
+    tags: ["React", "TypeScript", "Node.js", "Web3"],
+    image: custodialImg,
+    link: "https://github.com/iyantama9/custodial-apps",
+  },
+  {
+    title: "LLM Router",
+    description:
+      "Router LLM yang bisa menyalurkan request ke beberapa model sekaligus dan mengelola fallback otomatis. Mendukung multi-provider, load balancing sederhana, dan konfigurasi threshold.",
+    tags: ["Python", "FastAPI", "LLM", "API Gateway"],
+    image: llmRouterImg,
+    link: "https://github.com/iyantama9/iyanrouter-llm",
+  },
+  {
+    title: "Flux HR",
+    description:
+      "Sistem HRIS internal yang handle manajemen karyawan, absensi, pengajuan cuti, dan payroll. Project private, detail teknis tidak bisa diungkapkan.",
+    tags: ["Laravel", "MySQL", "HRIS", "Private"],
+    image: fluxHrImg,
+    link: "#",
+  },
+  {
     title: "SecBot - Security Scanner Bot",
     description:
       "Telegram bot yang bisa scan vulnerability suatu website atau repository secara otomatis. Terintegrasi sama AI buat analisis hasil scan dan kasih rekomendasi perbaikan.",
@@ -77,30 +101,6 @@ export const projects = [
     tags: ["Python", "Flet", "P2P Networking", "Encryption"],
     image: p2pImg,
     link: "https://github.com/iyantama9/P2P-Flet-py-Apps",
-  },
-  {
-    title: "Custodial Apps",
-    description:
-      "Aplikasi manajemen aset digital dengan fitur custodial wallet, tracking transaksi, dan dashboard monitoring. Dibangun dengan arsitektur modular dan fokus pada keamanan serta kemudahan pengguna.",
-    tags: ["React", "TypeScript", "Node.js", "Web3"],
-    image: custodialImg,
-    link: "https://github.com/iyantama9/custodial-apps",
-  },
-  {
-    title: "LLM Router",
-    description:
-      "Router LLM yang bisa menyalurkan request ke beberapa model sekaligus dan mengelola fallback otomatis. Mendukung multi-provider, load balancing sederhana, dan konfigurasi threshold.",
-    tags: ["Python", "FastAPI", "LLM", "API Gateway"],
-    image: llmRouterImg,
-    link: "https://github.com/iyantama9/iyanrouter-llm",
-  },
-  {
-    title: "Flux HR",
-    description:
-      "Sistem HRIS internal yang handle manajemen karyawan, absensi, pengajuan cuti, dan payroll. Project private, detail teknis tidak bisa diungkapkan.",
-    tags: ["Laravel", "MySQL", "HRIS", "Private"],
-    image: fluxHrImg,
-    link: "#",
   },
 ];
 
