@@ -8,6 +8,10 @@ import p2pImg from "../assets/P2P.jpg";
 import pacarkuImg from "../assets/Pacarku.jpg";
 import spiImg from "../assets/SPI.jpg";
 import secBotImg from "../assets/SecBot.jpg";
+import pacarku2Img from "../assets/Pacarku2.jpg";
+import custodialImg from "../assets/Custodial Apps.jpg";
+import llmRouterImg from "../assets/LLM Router.jpg";
+import fluxHrImg from "../assets/Flux HR.jpg";
 
 export const projects = [
   {
@@ -25,14 +29,6 @@ export const projects = [
     tags: ["React", "Express.js", "Python", "AI Face Recognition"],
     image: getAbsenImg,
     link: "https://github.com/iyantama9/GetAbsen",
-  },
-  {
-    title: "Pacarku - Pacar AI Antimainstream",
-    description:
-      "Salah satu Top Project Getcore.ID dan Flux yang fokus membangun platform pacar AI Antimainstream, dimana setiap karakter mempunyai otak, kepribadian, mood,dan backstory nya masing masing. Pacar AI juga dapat mengirim foto, video, voice note, bahkan Sleep call",
-    tags: ["React", "Express", "Redis", "Postgresql"],
-    image: pacarkuImg,
-    link: "https://github.com/zufar27/pacarku-ai",
   },
   {
     title: "SecBot - Security Scanner Bot",
@@ -75,19 +71,56 @@ export const projects = [
     link: "https://github.com/InnerWell-Klinic",
   },
   {
-    title: "SPI - Secure Parking Indonesia",
-    description:
-      "Sistem internal buat Secure Parking Indonesia, salah satu perusahaan pengelola parkir terbesar di Indonesia. Handle manajemen data parkir, monitoring area, dan reporting dashboard buat operasional harian.",
-    tags: ["Laravel", "MySQL", "Bootstrap"],
-    image: spiImg,
-    link: "#",
-  },
-  {
     title: "P2P Encrypted Chat",
     description:
       "Aplikasi chat peer-to-peer yang terenkripsi, langsung konek antar device tanpa lewat server pusat. Semua pesan di-encrypt end-to-end. Dibangun pakai Python Flet buat UI desktop-nya.",
     tags: ["Python", "Flet", "P2P Networking", "Encryption"],
     image: p2pImg,
     link: "https://github.com/iyantama9/P2P-Flet-py-Apps",
+  },
+  {
+    title: "Custodial Apps",
+    description:
+      "Aplikasi manajemen aset digital dengan fitur custodial wallet, tracking transaksi, dan dashboard monitoring. Dibangun dengan arsitektur modular dan fokus pada keamanan serta kemudahan pengguna.",
+    tags: ["React", "TypeScript", "Node.js", "Web3"],
+    image: custodialImg,
+    link: "https://github.com/iyantama9/custodial-apps",
+  },
+  {
+    title: "LLM Router",
+    description:
+      "Router LLM yang bisa menyalurkan request ke beberapa model sekaligus dan mengelola fallback otomatis. Mendukung multi-provider, load balancing sederhana, dan konfigurasi threshold.",
+    tags: ["Python", "FastAPI", "LLM", "API Gateway"],
+    image: llmRouterImg,
+    link: "https://github.com/iyantama9/iyanrouter-llm",
+  },
+  {
+    title: "Flux HR",
+    description:
+      "Sistem HRIS internal yang handle manajemen karyawan, absensi, pengajuan cuti, dan payroll. Project private, detail teknis tidak bisa diungkapkan.",
+    tags: ["Laravel", "MySQL", "HRIS", "Private"],
+    image: fluxHrImg,
+    link: "#",
+  },
+];
+
+export const topProjects = [
+  {
+    title: "Pacarku Landing Page",
+    description:
+      "Landing page premium buat platform Pacarku. Scroll-driven animation pakai 3D hero section, karakter yang gerak ngikutin scroll, responsive mobile-first, dan dark theme Cosmic Void.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    images: [pacarkuImg, pacarku2Img],
+    link: "https://github.com/iyantama9/pacarku-landing",
+    top: true,
+  },
+  {
+    title: "SPI - Secure Parking Indonesia",
+    description:
+      "Sistem internal buat Secure Parking Indonesia, salah satu perusahaan pengelola parkir terbesar di Indonesia. Handle manajemen data parkir, monitoring area, dan reporting dashboard buat operasional harian.",
+    tags: ["Laravel", "MySQL", "Bootstrap"],
+    image: spiImg,
+    link: "#",
+    top: true,
   },
 ];
