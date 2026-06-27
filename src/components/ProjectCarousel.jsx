@@ -23,6 +23,9 @@ const ProjectCarousel = ({ images, title = "Project", interval = 4000 }) => {
 
   return (
     <div
+      role="region"
+      aria-roledescription="carousel"
+      aria-label={`${title} images`}
       className="relative w-full h-56 overflow-hidden bg-[#0D1117] group"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -66,7 +69,7 @@ const ProjectCarousel = ({ images, title = "Project", interval = 4000 }) => {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                className={`w-2 h-2 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0D1117] ${
                   index === current ? "bg-cyan-400" : "bg-white/40 hover:bg-white/70"
                 }`}
                 aria-label={`Go to image ${index + 1}`}

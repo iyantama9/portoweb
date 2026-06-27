@@ -2,70 +2,70 @@ import { ArrowRight, Star } from "lucide-react";
 import { projects, topProjects } from "../data/projects";
 import ProjectCarousel from "./ProjectCarousel";
 
-const Projects = () => {
-  const ProjectCard = ({ project, isTop = false }) => (
-    <div
-      className={`group rounded-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:-translate-y-1.5 ${
-        isTop
-          ? "bg-[#161B22]/90 border border-amber-500/40 hover:border-amber-400/80 shadow-lg shadow-amber-900/10 hover:shadow-amber-900/20"
-          : "bg-[#161B22]/70 backdrop-blur-sm border border-gray-800 hover:border-white/40 hover:shadow-2xl hover:shadow-white/5"
-      }`}
-    >
-      {project.images ? (
-        <ProjectCarousel images={project.images} title={project.title} />
-      ) : (
-        <div className="w-full h-56 overflow-hidden bg-[#0D1117]">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </div>
-      )}
-
-      <div className="p-6 flex flex-col flex-grow">
-        <div className="flex items-start justify-between gap-3 mb-2">
-          <h3 className="text-xl font-bold text-gray-100 group-hover:text-white transition-colors duration-300">
-            {project.title}
-          </h3>
-          {isTop && (
-            <span className="inline-flex items-center gap-1 text-xs font-bold text-amber-300 bg-amber-500/10 border border-amber-500/30 px-2 py-1 rounded-full whitespace-nowrap">
-              <Star className="w-3 h-3 fill-amber-300" />
-              Top Project
-            </span>
-          )}
-        </div>
-        <p className="text-gray-400 flex-grow text-sm leading-relaxed">
-          {project.description}
-        </p>
-        <div className="my-4 flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <span
-              key={tag}
-              className={`text-xs border px-3 py-1 rounded-full font-mono ${
-                isTop
-                  ? "bg-amber-500/10 border-amber-500/30 text-amber-300"
-                  : "bg-gray-700/50 border-gray-600 text-cyan-300"
-              }`}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-        <a
-          href={project.link}
-          target={project.link !== "#" ? "_blank" : undefined}
-          rel={project.link !== "#" ? "noopener noreferrer" : undefined}
-          className="mt-auto text-cyan-400 font-semibold inline-flex items-center hover:text-white transition-colors duration-200"
-        >
-          {project.link !== "#" ? "Lihat Repository" : "Private Project"}
-          <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-        </a>
+const ProjectCard = ({ project, isTop = false }) => (
+  <div
+    className={`group rounded-lg overflow-hidden flex flex-col transform transition-all duration-300 hover:-translate-y-1.5 ${
+      isTop
+        ? "bg-[#161B22]/90 border border-amber-500/40 hover:border-amber-400/80 shadow-lg shadow-amber-900/10 hover:shadow-amber-900/20"
+        : "bg-[#161B22]/70 backdrop-blur-sm border border-gray-800 hover:border-white/40 hover:shadow-2xl hover:shadow-white/5"
+    }`}
+  >
+    {project.images ? (
+      <ProjectCarousel images={project.images} title={project.title} />
+    ) : (
+      <div className="w-full h-56 overflow-hidden bg-[#0D1117]">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
       </div>
-    </div>
-  );
+    )}
 
+    <div className="p-6 flex flex-col flex-grow">
+      <div className="flex items-start justify-between gap-3 mb-2">
+        <h3 className="text-xl font-bold text-gray-100 group-hover:text-white transition-colors duration-300">
+          {project.title}
+        </h3>
+        {isTop && (
+          <span className="inline-flex items-center gap-1 text-xs font-bold text-amber-300 bg-amber-500/10 border border-amber-500/30 px-2 py-1 rounded-full whitespace-nowrap">
+            <Star className="w-3 h-3 fill-amber-300" />
+            Top Project
+          </span>
+        )}
+      </div>
+      <p className="text-gray-400 flex-grow text-sm leading-relaxed">
+        {project.description}
+      </p>
+      <div className="my-4 flex flex-wrap gap-2">
+        {project.tags.map((tag, i) => (
+          <span
+            key={`${tag}-${i}`}
+            className={`text-xs border px-3 py-1 rounded-full font-mono ${
+              isTop
+                ? "bg-amber-500/10 border-amber-500/30 text-amber-300"
+                : "bg-gray-700/50 border-gray-600 text-cyan-300"
+            }`}
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+      <a
+        href={project.link}
+        target={project.link !== "#" ? "_blank" : undefined}
+        rel={project.link !== "#" ? "noopener noreferrer" : undefined}
+        className="mt-auto text-cyan-400 font-semibold inline-flex items-center hover:text-white transition-colors duration-200"
+      >
+        {project.link !== "#" ? "Lihat Repository" : "Private Project"}
+        <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+      </a>
+    </div>
+  </div>
+);
+
+const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <h2 className="font-mono text-3xl font-bold text-white mb-12 text-center">
@@ -73,8 +73,8 @@ const Projects = () => {
         <span className="text-green-400">$</span> ls -la
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-        {topProjects.map((project, index) => (
-          <ProjectCard key={index} project={project} isTop />
+        {topProjects.map((project) => (
+          <ProjectCard key={project.title} project={project} isTop />
         ))}
       </div>
 
@@ -83,8 +83,8 @@ const Projects = () => {
         <span className="text-green-400">$</span> ls -l
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+        {projects.map((project) => (
+          <ProjectCard key={project.title} project={project} />
         ))}
       </div>
     </section>
