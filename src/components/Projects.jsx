@@ -1,4 +1,4 @@
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { projects, topProjects } from "../data/projects";
 import ProjectCarousel from "./ProjectCarousel";
 
@@ -28,12 +28,6 @@ const ProjectCard = ({ project, isTop = false }) => (
         <h3 className="text-xl font-bold text-gray-100 group-hover:text-white transition-colors duration-300">
           {project.title}
         </h3>
-        {isTop && (
-          <span className="inline-flex items-center gap-1 text-xs font-bold text-amber-300 bg-amber-500/10 border border-amber-500/30 px-2 py-1 rounded-full whitespace-nowrap">
-            <Star className="w-3 h-3 fill-amber-300" />
-            Top Project
-          </span>
-        )}
       </div>
       <p className="text-gray-400 flex-grow text-sm leading-relaxed">
         {project.description}

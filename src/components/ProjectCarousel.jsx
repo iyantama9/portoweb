@@ -64,19 +64,6 @@ const ProjectCarousel = ({ images, title = "Project", interval = 4000 }) => {
             <ChevronRight className="w-5 h-5" />
           </button>
 
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrent(index)}
-                className={`w-2 h-2 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#0D1117] ${
-                  index === current ? "bg-cyan-400" : "bg-white/40 hover:bg-white/70"
-                }`}
-                aria-label={`Go to image ${index + 1}`}
-                aria-current={index === current ? "true" : undefined}
-              />
-            ))}
-          </div>
         </>
       )}
     </div>
