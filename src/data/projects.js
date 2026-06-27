@@ -106,12 +106,12 @@ export const projects = [
 
 export const topProjects = [
   {
-    title: "Pacarku Landing Page",
+    title: "Pacarku.ai",
     description:
-      "Landing page premium buat platform Pacarku. Scroll-driven animation pakai 3D hero section, karakter yang gerak ngikutin scroll, responsive mobile-first, dan dark theme Cosmic Void.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      "Salah satu Top Project Getcore.ID dan Flux yang fokus membangun platform pacar AI Antimainstream, dimana setiap karakter mempunyai otak, kepribadian, mood, dan backstory nya masing masing. Pacar AI juga dapat mengirim foto, video, voice note, bahkan Sleep call.",
+    tags: ["React", "Express", "Redis", "PostgreSQL"],
     images: [pacarkuImg, pacarku2Img],
-    link: "https://github.com/iyantama9/pacarku-landing",
+    link: "https://github.com/zufar27/pacarku-ai",
   },
   {
     title: "SPI - Secure Parking Indonesia",
