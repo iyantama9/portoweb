@@ -21,12 +21,52 @@ import foomImg from "../assets/Foom.jpg";
 
 export const projects = [
   {
-    title: "AskCore",
+    title: "AI Cafe CoreSip",
+    description:
+      "Platform chat AI multi model untuk pengunjung coffee shop yang hanya aktif dari WiFi cafe. CoreSip menyediakan daily energy, streaming chat, riwayat percakapan, top up QR dari kasir, dan panel admin multi cafe.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Multi model AI"],
+    image: aiCafeImg,
+    link: "#",
+  },
+  {
+    title: "Arsiva",
+    description:
+      "Platform private storage untuk Orange Pi 4A dengan upload yang bisa dilanjutkan, verifikasi chunk, deduplikasi konten, preview media, pemulihan file dari trash, dan controlled sharing.",
+    tags: ["React", "TypeScript", "Express", "PostgreSQL", "Docker"],
+    image: arsivaImg,
+    link: "https://github.com/iyantama9/NAS-Orangepi4A",
+  },
+  {
+    title: "CustoRouter",
+    description:
+      "AI gateway self hosted dengan API yang kompatibel dengan OpenAI dan Anthropic. Mengelola routing multi provider, rotasi credential, fallback, kuota client, observability real time, dan memory semantik dalam satu control plane.",
+    tags: ["Python", "FastAPI", "PostgreSQL", "LLM Gateway", "Docker"],
+    images: [custoRouterImg, custoRouter1Img],
+    link: "https://github.com/iyantama9/iyanrouter-llm",
+  },
+  {
+    title: "AskLo",
     description:
       "Aplikasi chat AI buat mobile yang connect ke beberapa LLM sekaligus. Bisa streaming response, edit pesan, search riwayat chat, dan ada keyboard shortcut juga. Backendnya jalan di VPS pakai SSE buat real time streaming.",
     tags: ["Dart", "Flutter", "SSE", "LLM Integration", "VPS"],
     image: askCoreImg,
     link: "https://github.com/iyantama9/AskCore",
+  },
+  {
+    title: "Flux HR",
+    description:
+      "Platform rekrutmen internal untuk mengelola lowongan, lamaran, pipeline kandidat, tes, interview, analytics, dan analisis CV berbantuan AI. Mendukung banyak entitas dengan akses admin yang terpisah.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Private"],
+    image: fluxHrImg,
+    link: "#",
+  },
+  {
+    title: "FOOM Future Makers",
+    description:
+      "Platform rekrutmen fresh graduate end to end untuk FOOM Global, mulai dari lamaran multi step dan online assessment hingga AI interview serta dashboard HR dengan funnel dan scorecard kandidat.",
+    tags: ["React", "Vite", "AI Interview", "Proctoring", "HR Dashboard"],
+    image: foomImg,
+    link: "#",
   },
   {
     title: "GetAbsen",
@@ -43,22 +83,6 @@ export const projects = [
     tags: ["React", "TypeScript", "Node.js", "Web3"],
     image: custodialImg,
     link: "https://github.com/iyantama9/custodial-apps",
-  },
-  {
-    title: "CustoRouter",
-    description:
-      "AI gateway self hosted dengan API yang kompatibel dengan OpenAI dan Anthropic. Mengelola routing multi provider, rotasi credential, fallback, kuota client, observability real time, dan memory semantik dalam satu control plane.",
-    tags: ["Python", "FastAPI", "PostgreSQL", "LLM Gateway", "Docker"],
-    images: [custoRouterImg, custoRouter1Img],
-    link: "https://github.com/iyantama9/iyanrouter-llm",
-  },
-  {
-    title: "Flux HR",
-    description:
-      "Platform rekrutmen internal untuk mengelola lowongan, lamaran, pipeline kandidat, tes, interview, analytics, dan analisis CV berbantuan AI. Mendukung banyak entitas dengan akses admin yang terpisah.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Private"],
-    image: fluxHrImg,
-    link: "#",
   },
   {
     title: "SecBot Security Scanner Bot",
@@ -107,30 +131,6 @@ export const projects = [
     tags: ["Python", "Flet", "P2P Networking", "Encryption"],
     image: p2pImg,
     link: "https://github.com/iyantama9/P2P-Flet-py-Apps",
-  },
-  {
-    title: "Arsiva",
-    description:
-      "Backend game edukasi bergaya visual novel untuk pelajar. Menangani cerita interaktif, kuis, puzzle, kelompok belajar, RBAC, serta gamifikasi berbasis XP, level, leaderboard, streak, dan daily task.",
-    tags: ["Golang", "GoFiber", "PostgreSQL", "Redis", "Clean Architecture"],
-    image: arsivaImg,
-    link: "https://github.com/ArthaFreestyle/Arsiva",
-  },
-  {
-    title: "FOOM Future Makers",
-    description:
-      "Platform rekrutmen fresh graduate end to end untuk FOOM Global, mulai dari lamaran multi step dan online assessment hingga AI interview serta dashboard HR dengan funnel dan scorecard kandidat.",
-    tags: ["React", "Vite", "AI Interview", "Proctoring", "HR Dashboard"],
-    image: foomImg,
-    link: "#",
-  },
-  {
-    title: "AI Cafe CoreSip",
-    description:
-      "Platform chat AI multi model untuk pengunjung coffee shop yang hanya aktif dari WiFi cafe. CoreSip menyediakan daily energy, streaming chat, riwayat percakapan, top up QR dari kasir, dan panel admin multi cafe.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Multi model AI"],
-    image: aiCafeImg,
-    link: "#",
   },
 ];
 
