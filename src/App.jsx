@@ -44,7 +44,7 @@ export default function App() {
 
       <div className="bg-[#0D1117] min-h-screen text-gray-300 font-sans relative z-0">
         <AnimatedBackground />
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 w-full max-w-screen-xl mx-auto px-5 sm:px-8 lg:px-10">
           <Hero />
           <Experience />
           <Projects />

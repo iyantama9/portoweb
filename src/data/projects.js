@@ -149,7 +149,7 @@ export const topProjects = [
       "Salah satu Top Project Getcore.ID dan Flux yang fokus membangun platform pacar AI Antimainstream, dimana setiap karakter mempunyai otak, kepribadian, mood, dan backstory nya masing masing. Pacar AI juga dapat mengirim foto, video, voice note, bahkan Sleep call.",
     tags: ["React", "Express", "Redis", "PostgreSQL"],
     images: [pacarkuImg, pacarku1Img, pacarku2Img],
-    link: "https://github.com/zufar27/pacarku-ai",
+    link: "#",
   },
   {
     title: "SPI Secure Parking Indonesia",

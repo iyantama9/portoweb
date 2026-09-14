@@ -26,7 +26,7 @@ const ProjectCarousel = ({ images, title = "Project", interval = 4000 }) => {
       role="region"
       aria-roledescription="carousel"
       aria-label={`${title} images`}
-      className="relative w-full h-56 overflow-hidden bg-[#0D1117] group"
+      className="relative w-full aspect-[40/27] overflow-hidden bg-[#0D1117] group"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}

@@ -1,5 +1,6 @@
 import { Briefcase, BookOpen } from "lucide-react";
 import { experiences } from "../data/experiences";
+import SectionHeading from "./SectionHeading";
 
 const Experience = () => {
   const isWorkExperience = (type) =>
@@ -8,7 +9,7 @@ const Experience = () => {
   const renderDescription = (description) => {
     if (Array.isArray(description) && description.length > 0) {
       return (
-        <ul className="mt-2 list-disc list-inside text-gray-400 space-y-1">
+        <ul className="mt-4 ml-5 list-disc list-outside text-gray-400 space-y-2 max-w-4xl leading-6">
           {description.map((item, i) => (
             <li key={i}>{item}</li>
           ))}
@@ -19,16 +20,13 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-20">
-      <h2 className="font-mono text-3xl font-bold text-white mb-12">
-        <span className="text-cyan-400">~/</span>experience
-        <span className="text-green-400">$</span> cat history.log
-      </h2>
-      <div className="border-l-2 border-gray-700 pl-6 space-y-12">
+    <section id="experience" className="py-16 sm:py-20 max-w-6xl mx-auto">
+      <SectionHeading path="experience" command="cat history.log" />
+      <div className="border-l border-gray-700 pl-6 sm:pl-8 space-y-12">
         {experiences.map((exp, index) => (
           <div key={index} className="relative">
             <div
-              className={`absolute -left-[34px] top-1 h-4 w-4 rounded-full ${
+              className={`absolute -left-[31px] sm:-left-[39px] top-1 h-3 w-3 rounded-full ring-4 ring-[#0D1117] ${
                 isWorkExperience(exp.type) ? "bg-cyan-400" : "bg-green-400"
               }`}
             ></div>
@@ -40,7 +38,7 @@ const Experience = () => {
                 </span>
               )}
             </div>
-            <h3 className="text-xl font-bold text-white mt-1 flex items-center">
+            <h3 className="text-lg sm:text-xl font-bold text-white mt-2 flex items-center">
               {isWorkExperience(exp.type) ? (
                 <Briefcase className="mr-2 text-cyan-400" size={20} />
               ) : (
