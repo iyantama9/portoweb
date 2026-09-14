@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="font-mono text-2xl sm:text-3xl text-green-400 mb-4">
         <span className="text-cyan-400">user@portfolio</span>:~${" "}
         <TypingEffect
-          text="initiate-profile.sh"
+          text="initiate_profile.sh"
           onComplete={() => setTimeout(() => setShowContent(true), 300)}
         />
         <span className="animate-ping">_</span>
@@ -25,11 +25,11 @@ const Hero = () => {
           </h2>
           <p className="max-w-xl mt-6 text-lg text-gray-400 leading-relaxed">
             Informatics graduate from Universitas Sebelas Maret and Fullstack
-            Developer at Getcore.ID. I build production-ready web platforms,
+            Developer at Getcore.ID. I build production ready web platforms,
             AI products, and cloud services with React, Next.js, Express,
             Laravel, FastAPI, and Golang. After completing my internship in
-            August 2026, I continued full-time at Getcore.ID, working across
-            multi-model AI, automation, and end-to-end product development.
+            August 2026, I continued full time at Getcore.ID, working across
+            multi model AI, automation, and end to end product development.
           </p>
           <div className="mt-8 flex items-center space-x-4">
             <a

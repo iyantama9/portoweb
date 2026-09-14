@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "AskCore",
     description:
-      "Aplikasi chat AI buat mobile yang connect ke beberapa LLM sekaligus. Bisa streaming response, edit pesan, search riwayat chat, dan ada keyboard shortcut juga. Backend-nya jalan di VPS pakai SSE buat real-time streaming.",
+      "Aplikasi chat AI buat mobile yang connect ke beberapa LLM sekaligus. Bisa streaming response, edit pesan, search riwayat chat, dan ada keyboard shortcut juga. Backendnya jalan di VPS pakai SSE buat real time streaming.",
     tags: ["Dart", "Flutter", "SSE", "LLM Integration", "VPS"],
     image: askCoreImg,
     link: "https://github.com/iyantama9/AskCore",
@@ -47,7 +47,7 @@ export const projects = [
   {
     title: "CustoRouter",
     description:
-      "AI gateway self-hosted dengan API yang kompatibel dengan OpenAI dan Anthropic. Mengelola routing multi-provider, rotasi credential, fallback, kuota client, observability real-time, dan memory semantik dalam satu control plane.",
+      "AI gateway self hosted dengan API yang kompatibel dengan OpenAI dan Anthropic. Mengelola routing multi provider, rotasi credential, fallback, kuota client, observability real time, dan memory semantik dalam satu control plane.",
     tags: ["Python", "FastAPI", "PostgreSQL", "LLM Gateway", "Docker"],
     images: [custoRouterImg, custoRouter1Img],
     link: "https://github.com/iyantama9/iyanrouter-llm",
@@ -55,13 +55,13 @@ export const projects = [
   {
     title: "Flux HR",
     description:
-      "Sistem HRIS internal yang handle manajemen karyawan, absensi, pengajuan cuti, dan payroll. Project private, detail teknis tidak bisa diungkapkan.",
-    tags: ["Laravel", "MySQL", "HRIS", "Private"],
+      "Platform rekrutmen internal untuk mengelola lowongan, lamaran, pipeline kandidat, tes, interview, analytics, dan analisis CV berbantuan AI. Mendukung banyak entitas dengan akses admin yang terpisah.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Private"],
     image: fluxHrImg,
     link: "#",
   },
   {
-    title: "SecBot - Security Scanner Bot",
+    title: "SecBot Security Scanner Bot",
     description:
       "Telegram bot yang bisa scan vulnerability suatu website atau repository secara otomatis. Terintegrasi sama AI buat analisis hasil scan dan kasih rekomendasi perbaikan.",
     tags: ["Python", "Telegram Bot", "Security Scan", "AI Analysis"],
@@ -69,7 +69,7 @@ export const projects = [
     link: "#",
   },
   {
-    title: "Yumi - Discord Payment Bot",
+    title: "Yumi Discord Payment Bot",
     description:
       "Bot Discord yang handle pembayaran otomatis lewat Midtrans. User bisa beli role, bot assign role berdasarkan status pembayaran, dan semua transaksi tercatat di Google Spreadsheet.",
     tags: ["Python FastAPI", "discord.py", "Midtrans", "GCP VM"],
@@ -85,9 +85,9 @@ export const projects = [
     link: "https://github.com/Anggar-In",
   },
   {
-    title: "Cah Apik Messenger - CAM",
+    title: "Cah Apik Messenger CAM",
     description:
-      "Aplikasi chat real-time yang support private message dan group chat. Pakai WebSocket biar pesan langsung nyampe tanpa delay. Frontend React + TypeScript, backend Express + Socket.IO.",
+      "Aplikasi chat real time yang support private message dan group chat. Pakai WebSocket biar pesan langsung nyampe tanpa delay. Frontend React + TypeScript, backend Express + Socket.IO.",
     tags: ["React", "TypeScript", "Express.js", "Socket.IO", "MySQL"],
     image: camImg,
     link: "https://github.com/iyantama9/CAM-Frontend",
@@ -95,7 +95,7 @@ export const projects = [
   {
     title: "Innerwell Klinic",
     description:
-      "Sistem informasi klinik kesehatan mental yang handle booking sesi konseling, manajemen pasien, dan pembayaran online via Midtrans. Full-stack Laravel dari dashboard admin sampai landing page.",
+      "Sistem informasi klinik kesehatan mental yang handle booking sesi konseling, manajemen pasien, dan pembayaran online via Midtrans. Full stack Laravel dari dashboard admin sampai landing page.",
     tags: ["Laravel", "MySQL", "Midtrans", "Blade"],
     image: innerwellImg,
     link: "https://github.com/InnerWell-Klinic",
@@ -103,18 +103,10 @@ export const projects = [
   {
     title: "P2P Encrypted Chat",
     description:
-      "Aplikasi chat peer-to-peer yang terenkripsi, langsung konek antar device tanpa lewat server pusat. Semua pesan di-encrypt end-to-end. Dibangun pakai Python Flet buat UI desktop-nya.",
+      "Aplikasi chat peer to peer yang terenkripsi, langsung konek antar device tanpa lewat server pusat. Semua pesan dienkripsi end to end. Dibangun pakai Python Flet buat UI desktopnya.",
     tags: ["Python", "Flet", "P2P Networking", "Encryption"],
     image: p2pImg,
     link: "https://github.com/iyantama9/P2P-Flet-py-Apps",
-  },
-  {
-    title: "Causora",
-    description:
-      "Platform riset trading Smart Money Concepts yang memindai pasar perpetual, memvalidasi setup lintas timeframe, mengelola risiko dan lifecycle order, lalu menyimpan setiap keputusan sebagai evidence yang bisa diaudit.",
-    tags: ["Python", "React", "Bybit API", "Docker", "LLM Research"],
-    image: causoraImg,
-    link: "https://github.com/iyantama9/causora",
   },
   {
     title: "Arsiva",
@@ -127,23 +119,30 @@ export const projects = [
   {
     title: "FOOM Future Makers",
     description:
-      "Platform rekrutmen fresh graduate end-to-end untuk FOOM Global, mulai dari lamaran multi-step dan online assessment hingga AI interview serta dashboard HR dengan funnel dan scorecard kandidat.",
+      "Platform rekrutmen fresh graduate end to end untuk FOOM Global, mulai dari lamaran multi step dan online assessment hingga AI interview serta dashboard HR dengan funnel dan scorecard kandidat.",
     tags: ["React", "Vite", "AI Interview", "Proctoring", "HR Dashboard"],
     image: foomImg,
-    link: "https://github.com/iyantama9/foom-applicant",
+    link: "#",
   },
   {
-    title: "AI Cafe — CoreSip",
+    title: "AI Cafe CoreSip",
     description:
-      "Platform chat AI multi-model untuk pengunjung coffee shop yang hanya aktif dari WiFi cafe. CoreSip menyediakan daily energy, streaming chat, riwayat percakapan, top-up QR dari kasir, dan panel admin multi-cafe.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Multi-model AI"],
+      "Platform chat AI multi model untuk pengunjung coffee shop yang hanya aktif dari WiFi cafe. CoreSip menyediakan daily energy, streaming chat, riwayat percakapan, top up QR dari kasir, dan panel admin multi cafe.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Multi model AI"],
     image: aiCafeImg,
-    link: "https://aicafe.getcore.id",
-    linkLabel: "Buka Live Project",
+    link: "#",
   },
 ];
 
 export const topProjects = [
+  {
+    title: "Causora",
+    description:
+      "Platform riset trading Smart Money Concepts yang memindai pasar perpetual, memvalidasi setup lintas timeframe, mengelola risiko dan lifecycle order, lalu menyimpan setiap keputusan sebagai evidence yang bisa diaudit.",
+    tags: ["Python", "React", "Bybit API", "Docker", "LLM Research"],
+    image: causoraImg,
+    link: "#",
+  },
   {
     title: "Pacarku.ai",
     description:
@@ -153,7 +152,7 @@ export const topProjects = [
     link: "https://github.com/zufar27/pacarku-ai",
   },
   {
-    title: "SPI - Secure Parking Indonesia",
+    title: "SPI Secure Parking Indonesia",
     description:
       "Sistem internal buat Secure Parking Indonesia, salah satu perusahaan pengelola parkir terbesar di Indonesia. Handle manajemen data parkir, monitoring area, dan reporting dashboard buat operasional harian.",
     tags: ["Laravel", "MySQL", "Bootstrap"],

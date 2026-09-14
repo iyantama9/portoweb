@@ -19,7 +19,7 @@ const Organizations = () => {
     <section id="organizations" className="py-20">
       <h2 className="font-mono text-3xl font-bold text-white mb-12">
         <span className="text-cyan-400">~/</span>orgs
-        <span className="text-green-400">$</span> show-activity
+        <span className="text-green-400">$</span> show activity
       </h2>
       <div className="space-y-8">
         {organizations.map((org, index) => (

@@ -36,7 +36,7 @@ const Experience = () => {
               <p className="text-sm text-gray-500 font-mono">{exp.period}</p>
               {isWorkExperience(exp.type) && (
                 <span className="text-xs bg-cyan-400/10 text-cyan-400 border border-cyan-400/30 px-2.5 py-0.5 rounded-full font-mono">
-                  {exp.type === "Employment" ? "Full-time" : "Intern"}
+                  {exp.type === "Employment" ? "Full time" : "Intern"}
                 </span>
               )}
             </div>
