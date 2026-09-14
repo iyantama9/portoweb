@@ -2,6 +2,9 @@ import { Briefcase, BookOpen } from "lucide-react";
 import { experiences } from "../data/experiences";
 
 const Experience = () => {
+  const isWorkExperience = (type) =>
+    type === "Internship" || type === "Employment";
+
   const renderDescription = (description) => {
     if (Array.isArray(description) && description.length > 0) {
       return (
@@ -26,19 +29,19 @@ const Experience = () => {
           <div key={index} className="relative">
             <div
               className={`absolute -left-[34px] top-1 h-4 w-4 rounded-full ${
-                exp.type === "Internship" ? "bg-cyan-400" : "bg-green-400"
+                isWorkExperience(exp.type) ? "bg-cyan-400" : "bg-green-400"
               }`}
             ></div>
             <div className="flex items-center gap-3 flex-wrap">
               <p className="text-sm text-gray-500 font-mono">{exp.period}</p>
-              {exp.type === "Internship" && (
+              {isWorkExperience(exp.type) && (
                 <span className="text-xs bg-cyan-400/10 text-cyan-400 border border-cyan-400/30 px-2.5 py-0.5 rounded-full font-mono">
-                  Intern
+                  {exp.type === "Employment" ? "Full-time" : "Intern"}
                 </span>
               )}
             </div>
             <h3 className="text-xl font-bold text-white mt-1 flex items-center">
-              {exp.type === "Internship" ? (
+              {isWorkExperience(exp.type) ? (
                 <Briefcase className="mr-2 text-cyan-400" size={20} />
               ) : (
                 <BookOpen className="mr-2 text-green-400" size={20} />

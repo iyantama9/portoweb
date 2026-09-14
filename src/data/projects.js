@@ -2,16 +2,22 @@ import yumiImg from "../assets/Yumi.jpg";
 import anggarinImg from "../assets/Anggarin.jpg";
 import camImg from "../assets/CAM.jpg";
 import innerwellImg from "../assets/Innerwell.jpg";
-import askCoreImg from "../assets/AskCore.jpg";
+import askCoreImg from "../assets/AskLo.jpg";
 import getAbsenImg from "../assets/Getabsen.jpg";
 import p2pImg from "../assets/P2P.jpg";
 import pacarkuImg from "../assets/Pacarku.jpg";
+import pacarku1Img from "../assets/Pacarku-1.jpg";
+import pacarku2Img from "../assets/Pacarku-2.jpg";
 import spiImg from "../assets/SPI.jpg";
 import secBotImg from "../assets/SecBot.jpg";
-import pacarku2Img from "../assets/Pacarku2.jpg";
 import custodialImg from "../assets/Custodial Apps.jpg";
-import llmRouterImg from "../assets/LLM Router.jpg";
 import fluxHrImg from "../assets/Flux HR.jpg";
+import aiCafeImg from "../assets/AI Caffe.jpg";
+import arsivaImg from "../assets/Arsiva.jpg";
+import causoraImg from "../assets/Causora.jpg";
+import custoRouterImg from "../assets/CustoRouter.jpg";
+import custoRouter1Img from "../assets/CustoRouter-1.jpg";
+import foomImg from "../assets/Foom.jpg";
 
 export const projects = [
   {
@@ -39,11 +45,11 @@ export const projects = [
     link: "https://github.com/iyantama9/custodial-apps",
   },
   {
-    title: "LLM Router",
+    title: "CustoRouter",
     description:
-      "Router LLM yang bisa menyalurkan request ke beberapa model sekaligus dan mengelola fallback otomatis. Mendukung multi-provider, load balancing sederhana, dan konfigurasi threshold.",
-    tags: ["Python", "FastAPI", "LLM", "API Gateway"],
-    image: llmRouterImg,
+      "AI gateway self-hosted dengan API yang kompatibel dengan OpenAI dan Anthropic. Mengelola routing multi-provider, rotasi credential, fallback, kuota client, observability real-time, dan memory semantik dalam satu control plane.",
+    tags: ["Python", "FastAPI", "PostgreSQL", "LLM Gateway", "Docker"],
+    images: [custoRouterImg, custoRouter1Img],
     link: "https://github.com/iyantama9/iyanrouter-llm",
   },
   {
@@ -102,6 +108,39 @@ export const projects = [
     image: p2pImg,
     link: "https://github.com/iyantama9/P2P-Flet-py-Apps",
   },
+  {
+    title: "Causora",
+    description:
+      "Platform riset trading Smart Money Concepts yang memindai pasar perpetual, memvalidasi setup lintas timeframe, mengelola risiko dan lifecycle order, lalu menyimpan setiap keputusan sebagai evidence yang bisa diaudit.",
+    tags: ["Python", "React", "Bybit API", "Docker", "LLM Research"],
+    image: causoraImg,
+    link: "https://github.com/iyantama9/causora",
+  },
+  {
+    title: "Arsiva",
+    description:
+      "Backend game edukasi bergaya visual novel untuk pelajar. Menangani cerita interaktif, kuis, puzzle, kelompok belajar, RBAC, serta gamifikasi berbasis XP, level, leaderboard, streak, dan daily task.",
+    tags: ["Golang", "GoFiber", "PostgreSQL", "Redis", "Clean Architecture"],
+    image: arsivaImg,
+    link: "https://github.com/ArthaFreestyle/Arsiva",
+  },
+  {
+    title: "FOOM Future Makers",
+    description:
+      "Platform rekrutmen fresh graduate end-to-end untuk FOOM Global, mulai dari lamaran multi-step dan online assessment hingga AI interview serta dashboard HR dengan funnel dan scorecard kandidat.",
+    tags: ["React", "Vite", "AI Interview", "Proctoring", "HR Dashboard"],
+    image: foomImg,
+    link: "https://github.com/iyantama9/foom-applicant",
+  },
+  {
+    title: "AI Cafe — CoreSip",
+    description:
+      "Platform chat AI multi-model untuk pengunjung coffee shop yang hanya aktif dari WiFi cafe. CoreSip menyediakan daily energy, streaming chat, riwayat percakapan, top-up QR dari kasir, dan panel admin multi-cafe.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Multi-model AI"],
+    image: aiCafeImg,
+    link: "https://aicafe.getcore.id",
+    linkLabel: "Buka Live Project",
+  },
 ];
 
 export const topProjects = [
@@ -110,7 +149,7 @@ export const topProjects = [
     description:
       "Salah satu Top Project Getcore.ID dan Flux yang fokus membangun platform pacar AI Antimainstream, dimana setiap karakter mempunyai otak, kepribadian, mood, dan backstory nya masing masing. Pacar AI juga dapat mengirim foto, video, voice note, bahkan Sleep call.",
     tags: ["React", "Express", "Redis", "PostgreSQL"],
-    images: [pacarkuImg, pacarku2Img],
+    images: [pacarkuImg, pacarku1Img, pacarku2Img],
     link: "https://github.com/zufar27/pacarku-ai",
   },
   {

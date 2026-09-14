@@ -24,16 +24,12 @@ const Hero = () => {
             Full Stack Developer | AI & Edge Computing Enthusiast
           </h2>
           <p className="max-w-xl mt-6 text-lg text-gray-400 leading-relaxed">
-            Final year Informatics student at Universitas Sebelas Maret and a
-            Cloud Computing graduate of Bangkit Academy (by Google, Tokopedia,
-            Gojek, and Traveloka). I specialize in Full Stack and Cloud
-            Computing development, with hands-on experience in a diverse
-            technical stack including React.js, Express.js, Laravel, FastAPI
-            (Python), and most recently, Golang. I possess strong communication
-            skills and a proactive, self-starter mindset. Currently, I am
-            expanding my expertise into Internet of Things (IoT), Edge
-            Computing, and Machine Learning to further enhance my technical
-            capabilities and professional potential.
+            Informatics graduate from Universitas Sebelas Maret and Fullstack
+            Developer at Getcore.ID. I build production-ready web platforms,
+            AI products, and cloud services with React, Next.js, Express,
+            Laravel, FastAPI, and Golang. After completing my internship in
+            August 2026, I continued full-time at Getcore.ID, working across
+            multi-model AI, automation, and end-to-end product development.
           </p>
           <div className="mt-8 flex items-center space-x-4">
             <a

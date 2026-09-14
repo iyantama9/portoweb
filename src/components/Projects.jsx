@@ -52,7 +52,9 @@ const ProjectCard = ({ project, isTop = false }) => (
         rel={project.link !== "#" ? "noopener noreferrer" : undefined}
         className="mt-auto text-cyan-400 font-semibold inline-flex items-center hover:text-white transition-colors duration-200"
       >
-        {project.link !== "#" ? "Lihat Repository" : "Private Project"}
+        {project.link !== "#"
+          ? project.linkLabel || "Lihat Repository"
+          : "Private Project"}
         <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
       </a>
     </div>

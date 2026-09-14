@@ -1,9 +1,20 @@
 export const experiences = [
   {
+    type: "Employment",
+    company: "Getcore.ID",
+    role: "Fullstack Developer",
+    period: "Aug 2026 - Present",
+    description: [
+      "Continuing full-time after the internship to build and ship AI-powered products and business platforms across the Getcore.ID ecosystem.",
+      "Developing CoreSip, a multi-cafe AI chat platform with WiFi-locked access, multi-model streaming, daily energy, cashier top-ups, and operational administration.",
+      "Building integration-ready product experiences such as FOOM Future Makers, covering candidate applications, online assessments, AI interviews, and HR review workflows.",
+    ],
+  },
+  {
     type: "Internship",
     company: "Getcore.ID",
     role: "Fullstack Developer",
-    period: "Feb 2026 - Now",
+    period: "Feb 2026 - Aug 2026",
     description: [
       "Actively collaborating with the founder of Getcore.ID and the CEO of Flux Creative Universe on the PacarKu project, a hyper realistic AI companion designed to simulate authentic human interaction through AI-generated photos, voice notes, videos, and interactive sleep calls.",
       "Developing a comprehensive dashboard for Secure Parking Indonesia, including large-scale data processing for all parking spots using Laravel.",
@@ -42,8 +53,8 @@ export const experiences = [
   {
     type: "Study",
     company: "Universitas Sebelas Maret",
-    role: "Informatics",
-    period: "Aug 2022 - Aug 2026",
-    description: [],
+    role: "Bachelor of Informatics",
+    period: "Aug 2022 - Jul 2026",
+    description: ["Graduated in July 2026."],
   },
 ];
